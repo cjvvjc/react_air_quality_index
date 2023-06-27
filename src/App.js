@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import AirQualityCard from './AirQualityCard'
 import PollutantInfo from './PollutantInfo';
 import './App.css';
+import AirQualityLevelsTable from './AirQualityLevelsTable';
 
 function App() {
   const [airQualityData, setAirQualityData] = useState(null)
@@ -44,6 +45,8 @@ function App() {
           <PollutantInfo pollutant={airQualityData.dominentpol}/>
         </>
       )}
+
+      <AirQualityLevelsTable />
     </div>
   );
 }
