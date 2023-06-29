@@ -5,6 +5,7 @@ import AirQualityCard from './AirQualityCard'
 import PollutantInfo from './PollutantInfo';
 import './App.css';
 import AirQualityLevelsTable from './AirQualityLevelsTable';
+import MoreInfo from './MoreInfo';
 
 function App() {
   const [airQualityData, setAirQualityData] = useState(null)
@@ -43,10 +44,12 @@ function App() {
         <>
           <AirQualityCard data={airQualityData}/>
           <PollutantInfo pollutant={airQualityData.dominentpol}/>
+          <MoreInfo attributions={airQualityData.attributions}/>
         </>
       )}
 
       <AirQualityLevelsTable />
+      
     </div>
   );
 }

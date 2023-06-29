@@ -25,7 +25,7 @@ const PollutantInfo = ({pollutant}) => {
                     {pollutant.toUpperCase()}
                 </h4>
                 <p>
-                    {getPollutantInfo(pollutant)} Information
+                    {getPollutantInfo(pollutant)}
                 </p>
             </div>
         </div>
